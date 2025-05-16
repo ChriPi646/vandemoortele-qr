@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Generator Vandemoortele</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <div class="card">
+      <img src="logo2.png" alt="Vandemoortele logo" class="top-logo" />
+      <h1 class="title">QR-code Generator</h1>
+      <label for="url">URL</label>
+      <input type="text" id="url" placeholder="Voer de URL in" />
+      <label for="werkpost">Werkpost</label>
+      <input type="text" id="werkpost" placeholder="Naam van de werkpost" />
+      <button onclick="generateQR()">Genereer QR-code</button>
+      <div id="result" class="preview"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
