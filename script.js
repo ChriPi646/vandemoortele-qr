@@ -15,7 +15,7 @@ function generateQR() {
     const size = canvas.width;
 
     const logo = new Image();
-    logo.src = "vandemoortele_logo.png";
+    logo.src = "VDM graan.png";
     logo.onload = () => {
       const logoSize = size * 0.3;
       ctx.drawImage(logo, (size - logoSize) / 2, (size - logoSize) / 2, logoSize, logoSize);
