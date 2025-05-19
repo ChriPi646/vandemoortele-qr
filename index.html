@@ -12,12 +12,21 @@
     <div class="card">
       <img src="logo2.png" alt="Vandemoortele logo" class="top-logo" />
       <h1 class="title">QR-code Generator</h1>
+
       <label for="url">URL</label>
-      <input type="text" id="url" placeholder="Voer de URL in" />
+      <input type="text" id="url" placeholder="Enter URL" />
       <label for="werkpost">Werkpost</label>
-      <input type="text" id="werkpost" placeholder="Naam van de werkpost" />
+      <input type="text" id="werkpost" placeholder="Post name" />
       <button onclick="generateQR()">Genereer QR-code</button>
+
       <div id="result" class="preview"></div>
+
+      <hr>
+      <h2>Batch upload (CSV)</h2>
+      <input type="file" id="csvfile" accept=".csv" />
+      <button onclick="handleCSV()">Upload CSV</button>
+      <br/>
+      <a href="voorbeeld.csv" download>Download voorbeeldbestand (CSV)</a>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
